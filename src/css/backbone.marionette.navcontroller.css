@@ -1,0 +1,118 @@
+.NavController {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+.NavController > .NavBar {
+  top: 0;
+}
+.NavController > .main-container,
+.NavController > .panel > .main-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: translate3d(-33.33%, 0, 0);
+  transform: translate3d(-33.33%, 0, 0);
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  width: 300%;
+  height: 100%;
+}
+.NavController > .main-container > .NavBar,
+.NavController > .panel > .main-container > .NavBar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: auto;
+  left: 0;
+  margin: auto;
+}
+.NavController > .main-container.slide-right,
+.NavController > .panel > .main-container.slide-right {
+  -webkit-transition: -webkit-transform 0.25s ease;
+  transition: -webkit-transform 0.25s ease;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.NavController > .main-container.slide-left,
+.NavController > .panel > .main-container.slide-left {
+  -webkit-transition: -webkit-transform 0.25s ease;
+  transition: -webkit-transform 0.25s ease;
+  -webkit-transform: translate3d(-66.66%, 0, 0);
+  transform: translate3d(-66.66%, 0, 0);
+}
+.NavController > .main-container > .left-view,
+.NavController > .panel > .main-container > .left-view,
+.NavController > .main-container > .middle-view,
+.NavController > .panel > .main-container > .middle-view,
+.NavController > .main-container > .right-view,
+.NavController > .panel > .main-container > .right-view {
+  width: 33.33%;
+}
+.NavController > .main-container > .left-view,
+.NavController > .panel > .main-container > .left-view {
+  position: absolute;
+  top: 0;
+  right: auto;
+  bottom: 0;
+  left: 0;
+}
+.NavController > .main-container > .left-view.with-navbar,
+.NavController > .panel > .main-container > .left-view.with-navbar {
+  top: 60px;
+}
+.NavController > .main-container > .middle-view,
+.NavController > .panel > .main-container > .middle-view {
+  position: absolute;
+  top: 0;
+  right: 33.33%;
+  bottom: 0;
+  left: auto;
+}
+.NavController > .main-container > .middle-view.with-navbar,
+.NavController > .panel > .main-container > .middle-view.with-navbar {
+  top: 60px;
+}
+.NavController > .main-container > .right-view,
+.NavController > .panel > .main-container > .right-view {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: auto;
+}
+.NavController > .main-container > .right-view.with-navbar,
+.NavController > .panel > .main-container > .right-view.with-navbar {
+  top: 60px;
+}
+.NavController > .modal-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  pointer-events: visible;
+  display: none;
+}
+.NavController > .touch-block {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  pointer-events: visible;
+  display: none;
+}
